@@ -150,6 +150,16 @@
             <div class="col-md-7">
                 <p>Computational Pipeline that uses Part-of-Speech tagger and human annotation to convert recipe text into a tree representation,
                     and calculates pairwise distance to visualize the similarities. <p>
+                <p>
+                <b>Data Gathering:</b> In the data gathering step, we crawl all search results for a queried dish, like chocolate chip cookie and tomato pasta, from recipe websites that use the schema.org’s Recipe scheme. <br>
+                <b>Parsing:</b>  We use off the shelf POS tagger and human annotation to parse tokens of the crawled recipes. More detail is provided in the section below on annotation interface.<br>
+                <b>Similarity Comparison:</b>  In order to obtain similarities between the recipes, we use a tree edit distance, a commonly used technique for comparing tree structures. However,
+                to incorporate the semantic difference between individual cooking actions and ingredients in capturing the structural difference, we dynamically adjust the weights associated with the relabel operations.
+                These weights are calculated using the cosine similarities of words from a pre-trained word embedding model.<br>
+                <b>Distance Matrix: </b> This similarity information is stored in a pairwise distance matrix, where each element is the tree edit distance between the corresponding recipes. The distance matrix is then converted into x,y coordinates using the Gram matrix. <br>
+                <b>Hierarchical Clustering:</b>  We used hierarchical clustering to group recipes with procedural similarities.
+
+            </p>
             </div>
 
         </div>
@@ -166,11 +176,11 @@
 
         <div class="col-md-7">
             We use <a href="https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNLP</a>’s Part- of-Speech (POS) tagger to label verbs and nouns in recipe instructions crawled in the data gathering step.
-            Most state- of-the-art POS taggers are statistically trained using mostly declarative sentences.
+            Most state-of-the-art POS taggers are statistically trained using mostly declarative sentences.
             In result, the performance is rather limited with imperative sentences in recipe instructions like “Whisk in chocolate hazelnut spread until combined and re- move from heat.”,
             because parsers recognize “Whisk” as a noun, “spread” as a verb, but they are a verb and a noun in this sentence respectively.
             To overcome this drawback and to more accurately identify tokens for cooking actions and cooking ingredients,
-            we recruited 12 annotators on campus to use a custom built web-based interface (left) for annotating recipe instructions.
+            we recruited 12 annotators on campus to use a custom built <b>web-based interface (left) </b> for annotating recipe instructions.
             After an iteration with the POS tagger, the crowd annotator fixes the tags that are labelled incorrectly.
 
         </div>
@@ -187,7 +197,7 @@
             <div class="col-md-5">
                 <h2>Annotated Recipe Dataset</h2>
                 <p> link will be up soon.<p>
-                <p> WE ARE COLLECTING MORE DATA ON Amazon Mechanical Turk! Please visit here to participate :) </p>
+                <p> WE ARE COLLECTING MORE DATA ON Amazon Mechanical Turk! Will post the link here :) </p>
                 <h2>Source code</h2>
                 <p> <a href="https://github.com/kixlab/recipescape-dashboard"> Dashboard </a><p>
                 <p> <a href="https://github.com/kixlab/recipescape-pipeline"> Pipeline </a><p>
