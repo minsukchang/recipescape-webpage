@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adbf4dc2-a651-4663-bd13-a0a9665b492d" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/20170202_Minsuk_RecipeScape_LBW.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RecipeScape_LBW_poster_print.pdf" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -20,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="204" column="28" lean-forward="false" selection-start-line="204" selection-start-column="28" selection-end-line="204" selection-end-column="28" />
+            <state relative-caret-position="365">
+              <caret line="226" column="134" lean-forward="false" selection-start-line="226" selection-start-column="134" selection-end-line="226" selection-end-column="134" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -72,10 +74,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="y" value="-1417" />
-    <option name="width" value="1982" />
-    <option name="height" value="1120" />
+    <option name="y" value="23" />
+    <option name="width" value="1640" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,18 +149,18 @@
       <workItem from="1500864040860" duration="24000" />
       <workItem from="1513647898545" duration="23000" />
       <workItem from="1513648119256" duration="15739000" />
-      <workItem from="1513675758575" duration="11000" />
+      <workItem from="1513675758575" duration="1117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15797000" />
+    <option name="totallyTimeSpent" value="16903000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="-1417" width="1982" height="1120" extended-state="0" />
+    <frame x="0" y="23" width="1640" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17658931" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21341464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -266,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="204" column="28" lean-forward="false" selection-start-line="204" selection-start-column="28" selection-end-line="204" selection-end-column="28" />
+        <state relative-caret-position="365">
+          <caret line="226" column="134" lean-forward="false" selection-start-line="226" selection-start-column="134" selection-end-line="226" selection-end-column="134" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
           </folding>
