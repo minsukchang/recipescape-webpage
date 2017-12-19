@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RecipeScape: An Interactive Tool for Analyzing Cooking Instructions at Scale</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        .normal {
+            font-size: 20px;
+        }
+        .center{
+            margin: auto;
+            text-align:left;
+            position: relative;
+            width:800px;
+        }
+        .center_vid{
+            margin: 0 auto;
+            display: block;
+        }
+        button{
+            margin:auto;
+            margin-top:10px;
+            margin-bottom:10px;
+            display:block;
+        }
+        canvas{
+            margin:auto;
+            position:relative;
+            display:block;
+        }
+    </style>
+</head>
+
+<div id="header" >
+    <a href="http://www.kixlab.org">
+        <img src=logo.png style="height:30px; float: left; margin-left: 30px; margin-top: 10px;">
+    </a>
+    <a href="http://stanford.edu/">
+        <img src="http://cs.stanford.edu/people/karpathy/densecap/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <a href="https://www.epfl.ch">
+        <img src="https://bernoulli.epfl.ch/images/website/logo-epfl-black.png" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <a href="http://cs.kaist.ac.kr/">
+        <img src="http://www.kaist.ac.kr/Img/kr/common/logo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <h1>RecipeScape: An Interactive Tool for Analyzing Cooking Instructions at Scale</h1>
+    <div style="clear:both;"></div>
+
+</div>
+<div class="sechighlight">
+    <div class="container sec">
+        <h2>Abstract</h2>
+
+        <div id="coursedesc" style="font-size:18px">
+            For cooking professionals and culinary students, understanding cooking instructions is an essential yet demanding task. Common tasks include categorizing different approaches to cooking a dish and identifying usage patterns of particular ingredients or cooking methods, all of which require extensive browsing and comparison. However, no existing system provides support for such in-depth and at-scale analysis. We present RecipeScape, an interactive system for browsing and analyzing the hundreds of recipes of a single dish available online. We also introduce a computational pipeline that extracts cooking processes from recipe text and calculates a procedural similarity between them. To evaluate how RecipeScape supports culinary analysis at scale, we conducted a user study with cooking professionals and culinary students with 500 recipes for two different dishes. Results show that RecipeScape clusters recipes into distinct approaches, and captures notable usage patterns of ingredients and cooking actions.
+        </div>
+    </div>
+</div>
+
+<div class="container sec">
+    <div align="center">
+        <iframe width="640" height="360" align="middle" src="https://www.youtube.com/embed/b1TccM1kN4U?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="sechighlight" align="center" >
+    <div >
+        <div class="instructor" style="width:150px">
+            <a href="https://sites.google.com/view/minsuk/">
+                <div class="instructorphoto"><img src="https://lh4.googleusercontent.com/aZj04H-EAWbaDUhWLVgJffVGwWfxBaV85YIuO-EZIwhiEQ3bQgwKI237UKpEbko8SfUuzJd0gcH2WpSJoFjZs80NRFNtFvoVsTtI9iTAuk4dC7Nd1A=w271"></div>
+                <div>Minsuk Chang</div>
+            </a>
+            <div>KAIST</div>
+        </div>
+        <div class="instructor" style="width:150px">
+
+                <div class="instructorphoto"><img src="https://avatars3.githubusercontent.com/u/17401551?s=460&v=4"></div>
+                <div>Leonore Guillain</div>
+
+            <div>EPFL</div>
+        </div>
+        <div class="instructor" style="width:150px">
+
+                <div class="instructorphoto"><img src="https://avatars1.githubusercontent.com/u/5417330?s=460&v=4"></div>
+                <div>Hyeungshik Jung</div>
+
+            <div>KAIST</div>
+        </div>
+        <div class="instructor" style="width:150px">
+
+                <div class="instructorphoto"><img src="https://scontent.ficn2-1.fna.fbcdn.net/v/t31.0-8/11147161_10204689114767614_4712547294514226844_o.jpg?oh=44904d33d74f000e753ad5556ebc6bb9&oe=5AB2CF89"></div>
+                <div>Vivian Hare</div>
+
+            <div>Stanford University</div>
+        </div>
+        <div class="instructor" style="width:150px">
+            <a href="http://juhokim.com">
+                <div class="instructorphoto"><img src="https://scontent.ficn2-1.fna.fbcdn.net/v/t1.0-9/13237854_10154260759428566_475868272623419903_n.jpg?oh=2b8c689e28026bc5660df85a7da11aeb&oe=5ACE5E9E"></div>
+                <div style="width:150px">Juho Kim</div>
+            </a>
+            <div>KAIST</div>
+        </div>
+        <div class="instructor" style="width:150px">
+            <a href="http://graphics.stanford.edu/~maneesh/">
+                <div class="instructorphoto"><img src="http://graphics.stanford.edu/~maneesh/images/agrawala-macarthur3-head-square.jpg"></div>
+                <div style="width:150px">Maneesh Agrawala</div>
+            </a>
+            <div>Stanford University</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container sec" style="font-size:22px">
+    <h2>Live Interface Dashboard</h2>
+    <a href="https://kixlab.github.io/recipescape-dashboard/">Link to our analytics dashboard interface
+    </a><br>
+    <div align="center">
+        <img src="ss_dashboard.png" width="80%"/>
+    </div>
+    <br>
+    <p>RecipeScape is an interface for analyszing cooking processes at scale with three main visualization components:
+        (a) RecipeMap provides clusters of recipes with respect to their structural similarities
+        (b) RecipeDeck provides in-depth view and pairwise comparisons of recipes
+        (c) RecipeStat provides usage patterns of cooking actions and ingredients. <p>
+
+</div>
+
+
+<div class="sechighlight">
+    <div class="container sec" style="font-size:18px">
+        <h2>Computational Pipeline</h2>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="ss_pipeilne.png" width="90%"/>
+            </div>
+            <div class="col-md-7">
+                <p>Computational Pipeline that uses Part-of-Speech tagger and human annotation to convert recipe text into a tree representation,
+                    and calculates pairwise distance to visualize the similarities. <p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container sec" style="font-size:18px">
+    <h2>Recipe Annotation Interface</h2>
+    <div class="row">
+        <div class="col-md-5">
+            <img src="ss_annotation.png" width="90%"/>
+        </div>
+
+        <div class="col-md-7">
+            We use <a href="https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNLP</a>’s Part- of-Speech (POS) tagger to label verbs and nouns in recipe instructions crawled in the data gathering step.
+            Most state- of-the-art POS taggers are statistically trained using mostly declarative sentences.
+            In result, the performance is rather limited with imperative sentences in recipe instructions like “Whisk in chocolate hazelnut spread until combined and re- move from heat.”,
+            because parsers recognize “Whisk” as a noun, “spread” as a verb, but they are a verb and a noun in this sentence respectively.
+            To overcome this drawback and to more accurately identify tokens for cooking actions and cooking ingredients,
+            we recruited 12 annotators on campus to use a custom built web-based interface (left) for annotating recipe instructions.
+            After an iteration with the POS tagger, the crowd annotator fixes the tags that are labelled incorrectly.
+
+        </div>
+    </div>
+    <br>
+
+</div>
+
+
+<div class="sechighlight">
+    <div class="container sec" style="font-size:18px">
+        <div class="row">
+
+            <div class="col-md-5">
+                <h2>Annotated Recipe Dataset</h2>
+                <p> link will be up soon.<p>
+                <p> WE ARE COLLECTING MORE DATA ON Amazon Mechanical Turk! Please visit here to participate :) </p>
+                <h2>Source code</h2>
+                <p> <a href="https://github.com/kixlab/recipescape-dashboard"> Dashboard </a><p>
+                <p> <a href="https://github.com/kixlab/recipescape-pipeline"> Pipeline </a><p>
+                <h2>CHI 2018 Paper</h2>
+                <p> To apper.<p>
+            </div>
+            <div class="col-md-7">
+                <h2>Bibtex</h2>
+                <pre style="font-size:12px;">
+            will be up soon
+</pre>
+            </div>
+
+        </div>
+        <hr class="style1">
+
+        <div class="row">
+        <div class="col-md-5">
+            <h2>CHI 2017 LBW Paper</h2>
+
+            <p>While our most recent paper is getting ready for publication, you can access our previous exploration <a href="ea1524-chang.pdf">here</a>. The interface and the computational details have changed, but the overall approach is similar. <p>
+
+        </div>
+        <div class="col-md-7">
+            <h2>Bibtex</h2>
+            <pre style="font-size:12px;">
+@inproceedings{chang2017recipescape,
+  title={Recipescape: Mining and analyzing diverse processes in cooking recipes},
+  author={Chang, Minsuk and Hare, Vivian M and Kim, Juho and Agrawala, Maneesh},
+  booktitle={Proceedings of the 2017 CHI Conference Extended Abstracts on Human Factors in Computing Systems},
+  pages={1524--1531},
+  year={2017},
+  organization={ACM}
+}
+            </pre>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container sec">
+    <div id="footer">
+        This research is supported by HRHRP at KAIST, and the Brown Institute at Stanford University.
+    </div>
+</div>
+
+
+</body>
+</html>
