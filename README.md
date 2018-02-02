@@ -1,2 +1,2 @@
 # recipescape-webpage
-webpage for recipescape project
+project webpage for recipescape
